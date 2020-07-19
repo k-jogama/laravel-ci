@@ -3,8 +3,10 @@ jobs:
   build:
     docker:
       - image: circleci/php:7.3-node-browsers
+<<<<<<< HEAD
     steps:
       - run: echo "Hello World"
+=======
       - image: circleci/postgres:11.6-alpine
         environment:
           POSTGRES_DB: larasns
@@ -50,3 +52,4 @@ jobs:
       - run:
           name: php test
           command: vendor/bin/phpunit
+>>>>>>> ci_test
